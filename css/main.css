@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.main-header {
+  background: url('../images/office-bg.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: #FFF;
+  position: relative;
+}
+
+
+
+.header-text {
+  position: relative;
+  align-self: center;
+  padding-top: 35vh;
+  text-align: center;
+  z-index: 1;
+}
+
+.header-text h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+
+
+.header-text p {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5px;
+  text-align: center;
+}
+
+
+.main-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.main-header__overlay {
+  width: 100%;
+  height: 100vh;
+  background: rgba(20, 21, 22, 0.56);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+
+.choose-us {
+  display: flex;
+  color: #fff;
+  background-color: #000;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.choose-us  h1 {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.choose-us-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.choose-us-list-item {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+
+.choose-us-list-item img {
+  filter: invert(100%); /* fixing png */
+  background: #fff;
+  width: 40px;
+  height: 45px;
+}
+
+.choose-us-list-item h2 {
+  padding-top: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.choose-us-list-item p {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.portfolio_overlay {
+  background: rgba(125, 122, 122, 0.24);
+}
+
+.portfolio {
+  text-align: center;
+  color: #fff;
+}
+
+.portfolio h1 {
+  padding-top: 150px;
+}
+
+.portfolio p {
+  margin-top: 15px;
+  padding-bottom: 50px;
+}
+
+.portfolio_gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 55px;
+  padding-bottom: 120px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: .5s ease;
+}
+
+.gallery_item:hover .gallery__img {
+  transform: scale(1.2);
+  background-color: rgba(54, 244, 161, 0.48);
+}
+
+
+.Testimonials {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.Testimonials h1 {
+  padding-top: 150px;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 3px;
+  margin-bottom: 90px;
+}
+
+
+.Testimonials img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.slider-item p {
+  padding: 50px 90px 20px;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.slider-item p:last-child {
+  padding: 50px 90px 90px;
+  line-height: 2;
+}
+
+/* Main News Section */
+.main_news_section {
+  background: rgb(20, 21, 22);
+}
+
+.main-news-list {
+  display: flex;
+  padding: 140px 0 0;
+  justify-content: space-between;
+  color: #fff;
+}
+
+
+.main-news-list li {
+  list-style: none;
+  margin: 20px;
+}
+
+.main-news-list img {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  backface-visibility: hidden;
+  transition: .5s ease;
+}
+
+
+.main-news-list img:hover {
+  opacity: 0.6;
+}
+
+.news-list-item-footer {
+  display: flex;
+  padding-top: 15px;
+}
+
+.news-list-item-footer i {
+  padding-right: 0.6em;
+}
+
+.news-list-item-footer div {
+  display: flex;
+}
+
+.news-list-item-footer div p:hover {
+  color: #c0c1c0;
+  transition: .2s ease-in;
+}
+
+.news-list-item-footer i:not(:first-child) {
+  padding-left: 2em;
+}
+
+.main-news-list img + h2 {
+  margin-top: 20px;
+}
+
+.main-news-list img ~ p {
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+.news-link-btn {
+  display: block;
+  background: transparent;
+  border: none;
+  padding: 55px 10px 65px;
+  width: 100%;
+  text-align: right;
+  color: #fff;
+}
+
+.news-link-btn:after {
+  content: ">";
+  font-size: 18px;
+  position: relative;
+  top: 1px;
+  padding-left: 5px;
+}
+
+.news-link-btn a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  color: inherit;
+}
+
+.news-link-btn a:hover {
+  text-decoration: underline;
+  color: #c0c1c0;
+  transition: 1s ease;
+}
