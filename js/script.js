@@ -24,6 +24,6 @@ $(function(){
 
 $(document).ready(function(){
   $('.menu_burger').click(function(){
-    $('ul').toggleClass('menu_active');
+    $('.navbar-list').toggleClass('menu_active');
   })
 })
